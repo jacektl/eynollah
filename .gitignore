@@ -1,5 +1,5 @@
 *.egg-info
 __pycache__
-sbb_newspapers_org_image/pylint.log
+eynollah/pylint.log
 models_eynollah*
 output.html

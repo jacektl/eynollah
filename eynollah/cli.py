@@ -1,6 +1,6 @@
 import click
 from ocrd_utils import initLogging, setOverrideLogLevel
-from sbb_newspapers_org_image.eynollah import eynollah
+from eynollah.eynollah import eynollah
 
 
 @click.command()
@@ -58,13 +58,15 @@ from sbb_newspapers_org_image.eynollah import eynollah
     "--allow-enhancement/--no-allow-enhancement",
     "-ae/-noae",
     is_flag=True,
-    help="if this parameter set to true, this tool would check that input image need resizing and enhancement or not. If so output of resized and enhanced image and corresponding layout data will be written in out directory",
+    help="if this parameter set to true, this tool would check that input image need resizing and enhancement or not. \
+    If so output of resized and enhanced image and corresponding layout data will be written in out directory",
 )
 @click.option(
     "--curved-line/--no-curvedline",
     "-cl/-nocl",
     is_flag=True,
-    help="if this parameter set to true, this tool will try to return contoure of textlines instead of rectabgle bounding box of textline. This should be taken into account that with this option the tool need more time to do process.",
+    help="if this parameter set to true, this tool will try to return contour of textlines instead of rectangle \
+    bounding box of textline. It should be taken into account with this option the tool need more time to do process.",
 )
 @click.option(
     "--full-layout/--no-full-layout",
@@ -76,7 +78,8 @@ from sbb_newspapers_org_image.eynollah import eynollah
     "--allow_scaling/--no-allow-scaling",
     "-as/-noas",
     is_flag=True,
-    help="if this parameter set to true, this tool would check the scale and if needed it will scale it to perform better layout detection",
+    help="if this parameter set to true, this tool would check the scale and if needed it will scale it to perform \
+    better layout detection",
 )
 @click.option(
     "--headers-off/--headers-on",

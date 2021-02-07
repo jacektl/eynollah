@@ -14,7 +14,7 @@ setup(
     install_requires=install_requires,
     entry_points={
         'console_scripts': [
-            'eynollah=sbb_newspapers_org_image.cli:main',
+            'eynollah=eynollah.cli:main',
             # 'ocrd-eynollah=eynollah.ocrd_cli:cli',
         ]
     },

@@ -5,6 +5,7 @@ NAMESPACES['page'] = "http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-
 NAMESPACES['xsi'] = "http://www.w3.org/2001/XMLSchema-instance"
 NAMESPACES[None] = NAMESPACES['page']
 
+
 def create_page_xml(imageFilename, height, width):
     pcgts = ET.Element("PcGts", nsmap=NAMESPACES)
 
@@ -31,4 +32,3 @@ def create_page_xml(imageFilename, height, width):
     page.set("textLineOrder", "top-to-bottom")
 
     return pcgts, page
-
